@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1 id="title">Welcome,</h1>
+            <p id="subtitle">Please, register to continue</p>
+        </div>
+        <form id="form">
+            <div class="form-container">
+                <label for="first-name">first name</label>
+                <input type="text" id="first-name" class="form-input" name="first-name" required placeholder="Your first name">
+            </div>
+            <div class="form-container">
+                <label for="last-name">last name</label>
+                <input type="text" id="last-name" class="form-input" name="last-name" required placeholder="Your last name">
+            </div>
+            <div class="form-container">
+                <label for="birth-date">birth date</label>
+                <input type="date" id="birth-date" class="form-input" name="birth-date" required placeholder="MM/DD/YYYY">
+            </div>
+            <div class="form-container">
+                <label for="country">Country</label>
+                <input type="text" id="country" class="form-input" name="country" required placeholder="Your Country">
+            </div>
+            <div class="form-container">
+                <label for="city">City</label>
+                <input type="text" id="city" class="form-input" name="city" required placeholder="Your City">
+            </div>
+            <div class="form-container">
+                <label for="email">e-mail</label>
+                <input type="email" id="email" class="form-input" name="email" required placeholder="A valid e-mail here">
+            </div>
+            <div class="form-container">
+                <label for="password">password</label>
+                <input type="password" id="password" class="form-input" name="password" required placeholder="Your password">
+            </div>
+            <div class="form-container">
+                <label for="confirm-password">password</label>
+                <input type="password" id="confirm-password" class="form-input" name="confirm-password" required placeholder="Confirm your password">
+            </div>
+        </form>
+        <div class="botoes">
+            <button type="button" class="btn">Register Now</button>
+            <button type="button" class="btn">Log in</button>
+        </div>
+    </div>
+    
+    <div class="container-image">
+        <img src="../images/compass-logo.png" alt="Logo Compass" id="logo-compass">
+        <img src="../images/back-image.png" alt="Imagem de Fundo" id="imagem-de-fundo">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
