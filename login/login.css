@@ -19,12 +19,18 @@
 
 .form-container {
     max-width: 379px;
+    gap: 15px;
 }
 
 .form-input {
     font-size: 16px;
 }
 
+.form-input:not(:placeholder-shown) + .icons {
+    right: 15%;
+}
+
 .icons {
-    margin-left: 10px;
+    position: relative;
+    right: 0;
 }
