@@ -1,0 +1,30 @@
+/* Título */
+
+.subtitle {
+    width: 300px;
+    font-size: 16px;
+}
+
+/* Formulário */
+
+.form {
+    gap: 30px;
+}
+
+.form-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.form-container {
+    max-width: 379px;
+}
+
+.form-input {
+    font-size: 16px;
+}
+
+.icons {
+    margin-left: 10px;
+}

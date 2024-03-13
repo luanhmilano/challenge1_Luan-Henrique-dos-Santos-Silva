@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <div class="container">
         <div class="text">
-            <h1 id="title">Welcome,</h1>
-            <p id="subtitle">Please, register to continue</p>
+            <h1 class="title">Welcome,</h1>
+            <p class="subtitle">Please, register to continue</p>
         </div>
-        <form id="form">
+        <form class="form">
             <div class="form-container">
                 <label for="first-name">first name</label>
                 <input type="text" id="first-name" class="form-input" name="first-name" required placeholder="Your first name">
@@ -48,15 +49,15 @@
         </form>
         <div class="botoes">
             <button type="button" class="btn">Register Now</button>
-            <button type="button" class="btn">Log in</button>
+            <a href="../login/login.html"><button type="button" class="btn">Log in</button></a>
         </div>
     </div>
     
     <div class="container-image">
-        <a href="#">
+        <a href="#" class="logo-link">
             <img src="../images/compass-logo.png" alt="Logo Compass" id="logo-compass">
         </a>
-        <img src="../images/back-image.png" alt="Imagem de Fundo" id="imagem-de-fundo">
+        <img src="../images/back-image.png" alt="Imagem de Fundo" class="imagem-de-fundo">
     </div>
 
     <script src="main.js"></script>

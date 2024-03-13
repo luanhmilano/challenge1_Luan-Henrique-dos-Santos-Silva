@@ -1,47 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:wght@300;400;700&display=swap');
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: space-between;
-    font-family: "Mulish", sans-serif;
-    background-image: linear-gradient(#33383D, #1C1D20);
-    color: #fff;
-}
-
-/* Container do formulário */
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 50vw;
-}
-
 /* Título e subtítulo */
 
-.text {
-    display: flex;
-    flex-direction: column;
-    width: 273px;
-    height: 75px;
-}
-
-#title {
-    font-size: 60px;
-    font-weight: 400;
-    color: #E0E0E0;
+.title {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#subtitle {
+.subtitle {
     width: 301px;
     font-size: 16px;
     -webkit-text-stroke: 0.04em #000;
@@ -49,75 +12,12 @@ body {
 
 /* Formulário */
 
-#form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-left: 200px;
-}
-
-.form-container {
-    width: 471px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-    gap: 10px;
-    color: #E0E0E0;
-}
-
-.form-input {
-    width: 379px;
-    height: 100%;
-    font-size: 12px;
-    border-radius: 50px;
-    text-indent: 15px;
-    border: 2px solid #fff;
-    background: #26292C;
-    color: #E0E0E0;
-}
-
-
-/* Imagens */
-
-.container-image {
-    width: 50vw;
-    max-width: 960px;
-    display: flex;
-    justify-content: center;
-}
-
-a {
-    position: absolute;
-    margin-top: 36px;
-    max-width: 100%;
-    
-}
-
-
-#imagem-de-fundo {
-    width: 100%;
+.form {
+    margin-left: 150px;
 }
 
 /* Botões */
 
 .botoes {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     margin-left: 150px;
-}
-
-.btn {
-    width: 379px;
-    height: 67px;
-    background-image: linear-gradient(to right,#FF2D04, #C13216);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    border: none;
-    border-radius: 50px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 32px;
-    cursor: pointer;
 }
