@@ -4,6 +4,7 @@ form.addEventListener("submit", function(e) {
     e.preventDefault()
     if (login()) {
         alert("Usuário encontrado, bem vindo!")
+        window.location.href = "../dashboard/dashboard.html"
     } else {
         document.querySelector(".login-error").innerHTML = "Wow, invalid username or password. Please, try again!"
         let campos = document.querySelectorAll(".form-input")

@@ -3,6 +3,7 @@
 const form = document.querySelector('.form')
 
 form.addEventListener("submit", function(e) {
+    e.preventDefault()
 
     let inputFirstName = document.getElementById('first-name').value
     let inputLastName = document.getElementById('last-name').value
@@ -26,6 +27,7 @@ form.addEventListener("submit", function(e) {
 
     localStorage.setItem("users", JSON.stringify(users))
     alert("Usuário cadastrado com sucesso")
+    window.location.href = "../login/login.html"
 })
 
 /* Função para verificar se as senhas são iguais */
