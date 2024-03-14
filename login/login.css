@@ -1,6 +1,7 @@
 /* Título */
 
 .subtitle {
+    margin-top: 20px;
     width: 300px;
     font-size: 16px;
 }
@@ -33,4 +34,12 @@
 .icons {
     position: relative;
     right: 0;
+}
+
+.login-error {
+    width: 283px;
+    color: #E9B425;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
 }

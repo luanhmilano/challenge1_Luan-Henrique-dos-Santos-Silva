@@ -19,5 +19,19 @@
 /* Botões */
 
 .botoes {
-    margin-left: 150px;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.botoes p {
+    text-align: center;
+    color: #F22E07;
+    font-size: 16px;
+    margin-right: 50px;
+}
+
+.link-text {
+    font-weight: 700;
+    text-decoration: none;
+    color: #F22E07;
 }

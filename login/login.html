@@ -16,25 +16,28 @@
         <form class="form">
             <h2 class="form-title">Login</h2>
             <div class="form-container">
-                <input type="text" id="user-name" class="form-input" name="user-name" required placeholder="user name">
+                <input type="email" id="email-login" class="form-input" name="email-login" required placeholder="email">
                 <span class="icons"><img src="icons/icon-user.svg" alt="User Icon"></span>
             </div>
             <div class="form-container">
                 <input type="password" id="password-login" class="form-input" name="password-login" required placeholder="password">
                 <span class="icons"><img src="icons/icon-password.svg" alt="Password Icon"></span>
             </div>
+            <p class="login-error"></p>
+            <div class="botoes">
+                <button type="submit" class="btn">Log in</button>   
+                <a href="../cadastro/cadastro.html"><button type="button" class="btn">Register Now</button></a>
+            </div>
         </form>
-        <div class="botoes">
-            <button type="button" class="btn">Log in</button>
-            <a href="../cadastro/cadastro.html"><button type="button" class="btn">Register Now</button></a>
-        </div>
     </div>
     
     <div class="container-image">
-        <a href="#" class="logo-link">
+        <a href="https://compass.uol/pt/home/" target="_blank" class="logo-link">
             <img src="../images/compass-logo.png" alt="Logo Compass" id="logo-compass">
         </a>
         <img src="../images/back-image.png" alt="Fundo" class="imagem-de-fundo">
     </div>
+
+    <script src="login.js"></script>
 </body>
 </html>

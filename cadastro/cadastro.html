@@ -13,53 +13,53 @@
             <h1 class="title">Welcome,</h1>
             <p class="subtitle">Please, register to continue</p>
         </div>
-        <form class="form">
-            <div class="form-container">
-                <label for="first-name">first name</label>
-                <input type="text" id="first-name" class="form-input" name="first-name" required placeholder="Your first name">
-            </div>
-            <div class="form-container">
-                <label for="last-name">last name</label>
-                <input type="text" id="last-name" class="form-input" name="last-name" required placeholder="Your last name">
-            </div>
-            <div class="form-container">
-                <label for="birth-date">birth date</label>
-                <input type="date" id="birth-date" class="form-input" name="birth-date" required placeholder="MM/DD/YYYY">
-            </div>
-            <div class="form-container">
-                <label for="country">Country</label>
-                <input type="text" id="country" class="form-input" name="country" required placeholder="Your Country">
-            </div>
-            <div class="form-container">
-                <label for="city">City</label>
-                <input type="text" id="city" class="form-input" name="city" required placeholder="Your City">
-            </div>
-            <div class="form-container">
-                <label for="email">e-mail</label>
-                <input type="email" id="email" class="form-input" name="email" required placeholder="A valid e-mail here">
-            </div>
-            <div class="form-container">
-                <label for="password">password</label>
-                <input type="password" id="password" class="form-input" name="password" required placeholder="Your password">
-            </div>
-            <div class="form-container">
-                <label for="confirm-password">password</label>
-                <input type="password" id="confirm-password" class="form-input" name="confirm-password" required placeholder="Confirm your password">
+        <form class="form" method="post">
+                <div class="form-container">
+                    <label for="first-name">first name</label>
+                    <input type="text" id="first-name" class="form-input" name="first-name" required placeholder="Your first name">
+                </div>
+                <div class="form-container">
+                    <label for="last-name">last name</label>
+                    <input type="text" id="last-name" class="form-input" name="last-name" required placeholder="Your last name">
+                </div>
+                <div class="form-container">
+                    <label for="birth-date">birth date</label>
+                    <input type="date" id="birth-date" class="form-input" name="birth-date" required placeholder="MM/DD/YYYY">
+                </div>
+                <div class="form-container">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" class="form-input" name="country" required placeholder="Your Country">
+                </div>
+                <div class="form-container">
+                    <label for="city">City</label>
+                    <input type="text" id="city" class="form-input" name="city" required placeholder="Your City">
+                </div>
+                <div class="form-container">
+                    <label for="email">e-mail</label>
+                    <input type="email" id="email" class="form-input" name="email" onchange="verificaEmail()" required placeholder="A valid e-mail here">
+                </div>
+                <div class="form-container">
+                    <label for="password">password</label>
+                    <input type="password" id="password" class="form-input" name="password" onchange="conferir()" required placeholder="Your password">
+                </div>
+                <div class="form-container">
+                    <label for="confirm-password">password</label>
+                    <input type="password" id="confirm-password" class="form-input" name="confirm-password" onchange="conferir()" required placeholder="Confirm your password">
+                </div>
+            <div class="botoes">
+                <button type="submit" class="btn" id="btnRegister">Register Now</button>
+                <p>Already have an account? <a href="../login/login.html" class="link-text">Log in here.</a></p>
             </div>
         </form>
-        <div class="botoes">
-            <button type="button" class="btn">Register Now</button>
-            <a href="../login/login.html"><button type="button" class="btn">Log in</button></a>
-        </div>
     </div>
     
     <div class="container-image">
-        <a href="#" class="logo-link">
+        <a href="https://compass.uol/pt/home/" target="_blank" class="logo-link">
             <img src="../images/compass-logo.png" alt="Logo Compass" id="logo-compass">
         </a>
-        <img src="../images/back-image.png" alt="Imagem de Fundo" class="imagem-de-fundo">
+        <img src="../images/back-image.png" alt="Fundo" class="imagem-de-fundo">
     </div>
 
-    <script src="main.js"></script>
+    <script src="cadastro.js"></script>
 </body>
 </html>
