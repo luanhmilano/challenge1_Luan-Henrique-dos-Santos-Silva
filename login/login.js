@@ -24,6 +24,7 @@ function login() {
         if (element.email === inputEmail.value) {
             if (element.password === inputPassword.value) {
                 active = true
+                token(element)
                 break
             }
         } else {
@@ -33,4 +34,15 @@ function login() {
     return active
 }
 
+function token(usuario) {
 
+    const token = "isLoggedIn"
+
+    const user = {
+        email: usuario.email,
+        city: usuario.city
+    }
+
+    sessionStorage.setItem("logado", JSON.stringify(user))
+    sessionStorage.setItem("token", token)
+}
