@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
     <header>
@@ -15,14 +16,51 @@
             <p id="data"></p>
         </div>
         <div class="temperatura">
-            
+            <p class="cidade">Passo Fundo</p>
+            <p class="celsius"><span><img src="icone/nuvem.svg" alt="Nuvem">22°</span></p>
         </div>
     </header>
     <section>
-
+        <div class="image-container">
+            <img src="../images/uol-logo.png" alt="Logo UOL">
+        </div>
+        <div class="texto">
+            <div class="text1">
+                <p class="title" id="first-one">Our mission is</p>
+                <p class="subtitle">Nossa missão é</p>
+            </div>
+            <div class="text1">
+                <p class="title">to transform the world</p>
+                <p class="subtitle">transformar o mundo</p>
+            </div>
+            <div class="text1">
+                <p class="title">building digital experiences</p>
+                <p class="subtitle">construindo experiências digitais</p>
+            </div>
+            <div class="text1">
+                <p class="title">that enable our client's growth</p>
+                <p class="subtitle">que permitam o crescimento dos nossos clientes</p>
+            </div>
+        </div>
     </section>
     <footer>
-
+        <div class="left-footer">
+            <p>Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar</p>
+            <i><img src="icone/line.svg" alt="Linha"></i>
+        </div>
+        <div class="right-footer">
+            <div class="footer-refresh">
+                <p class="title-refresh">Application refresh in</p>
+                <div class="time-refresh">
+                    <p id="refresh">600</p>
+                    <p class="subtitle-refresh">seconds</p>
+                </div>
+            </div>
+            <div class="footer-botoes">
+                <button type="button" id="keep"><a href="https://google.com" target="_blank">Continuar navegando</a></button>
+                <button type="button" id="logout">Logout</button>
+            </div>
+        </div>
     </footer>
 
     <script src="dashboard.js"></script>
