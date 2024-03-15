@@ -1,3 +1,14 @@
+/* Logado e deslogado */
+
+verificaLogin()
+function verificaLogin() {
+    if (sessionStorage.hasOwnProperty("token")) {
+        console.log("Usuário logado")
+    } else {
+        window.location.href = "../login/login.html"
+    }
+}
+
 /* Hora e data */
 
 const interval = setInterval(() => {
@@ -6,7 +17,7 @@ const interval = setInterval(() => {
     dataAtual(data)
     horaAtual(data)
 
-}, 5000)
+}, 1000)
 
 function dataAtual(date) {
 
@@ -100,3 +111,28 @@ function verificaHora(hora) {
 function verificaMinutos(hora) {
     return hora.getMinutes()
 }
+
+/* Temperatura */
+
+const apiKey = "e0448d9a4afdc0f3c76229a8b9247bcc"
+const getLog = JSON.parse(sessionStorage.getItem("logado"))
+const cidade = getLog.city
+
+function pegarTemperatura(cidade) {
+
+    const apiKey = "e0448d9a4afdc0f3c76229a8b9247bcc"
+    const apiTempUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=${apiKey}&lang=pt_br`
+    let data = JSON.stringify(apiTempUrl)
+    console.log(data)
+}
+
+pegarTemperatura(cidade)
+
+/* Logout */
+
+const botao = document.getElementById('logout')
+botao.addEventListener("click", (e) => {
+    e.preventDefault()
+    sessionStorage.removeItem("token")
+    verificaLogin()
+})
