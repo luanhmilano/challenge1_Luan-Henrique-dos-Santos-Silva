@@ -153,3 +153,20 @@ botao.addEventListener("click", (e) => {
     sessionStorage.removeItem("token")
     verificaLogin()
 })
+
+/* Refresh */
+
+function startCounter() {
+    let seconds = 30
+    let interval = setInterval(() => {
+        if (seconds > 0) {
+            document.getElementById("refresh").innerHTML = seconds
+            seconds--
+        } else {
+            location.reload()
+        }
+        
+    }, 1000)
+}
+
+startCounter()
