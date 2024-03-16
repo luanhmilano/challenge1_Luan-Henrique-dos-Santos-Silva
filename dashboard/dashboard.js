@@ -11,6 +11,10 @@ function verificaLogin() {
 
 /* Hora e data */
 
+const zero = n => {
+    return ('0' + n).slice(-2)
+}
+
 const interval = setInterval(() => {
     const data = new Date()
 
@@ -105,11 +109,11 @@ function verificaDia(data) {
 }
 
 function verificaHora(hora) {
-    return hora.getHours()
+    return zero(hora.getHours())
 }
 
 function verificaMinutos(hora) {
-    return hora.getMinutes()
+    return zero(hora.getMinutes())
 }
 
 /* Temperatura */
