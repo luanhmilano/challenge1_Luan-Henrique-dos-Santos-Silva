@@ -48,13 +48,25 @@ function conferir() {
 function verificaEmail() {
     const inputEmail = document.getElementById('email')
 
-    const getUser = JSON.parse(localStorage.getItem("users"))
-    for (const element of getUser) {
-        if (element.email === inputEmail.value) {
-            inputEmail.setCustomValidity("Email já cadastrado.")
-            break
-        } else {
-            inputEmail.setCustomValidity('')
+    if (emailValido(inputEmail.value)) {
+        const getUser = JSON.parse(localStorage.getItem("users"))
+        for (const element of getUser) {
+            if (element.email === inputEmail.value) {
+                inputEmail.setCustomValidity("Email já cadastrado.")
+                break
+            } else {
+                inputEmail.setCustomValidity('')
+            }
         }
+    } else {
+        inputEmail.setCustomValidity("Digite um email válido.")
     }
+
+    
+}
+
+function emailValido(email) {
+    const validar = /\w+@\w+\.\w+/
+
+    return validar.test(email)
 }
