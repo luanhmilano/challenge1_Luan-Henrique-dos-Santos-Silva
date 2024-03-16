@@ -116,17 +116,30 @@ function verificaMinutos(hora) {
 
 const apiKey = "e0448d9a4afdc0f3c76229a8b9247bcc"
 const getLog = JSON.parse(sessionStorage.getItem("logado"))
-const cidade = getLog.city
+const userCity = getLog.city
 
-function pegarTemperatura(cidade) {
+const cidade = document.getElementById("cidade")
+const celsius = document.getElementById("celsius-show")
 
-    const apiKey = "e0448d9a4afdc0f3c76229a8b9247bcc"
-    const apiTempUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=${apiKey}&lang=pt_br`
-    let data = JSON.stringify(apiTempUrl)
-    console.log(data)
+const getWeatherData = async(city) => {
+    const apiTempUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`
+
+    const res = await fetch(apiTempUrl)
+    const data = await res.json()
+    return data
 }
 
-pegarTemperatura(cidade)
+const showWeatherData = async(city) => {
+    const data = await getWeatherData(city)
+    if (data.name === undefined) {
+        cidade.innerHTML = "Cidade não encontrada"
+    } else {
+        cidade.innerHTML = data.name
+        celsius.innerHTML = parseInt(data.main.temp) + "°"
+    }
+}
+
+showWeatherData(userCity)
 
 /* Logout */
 
