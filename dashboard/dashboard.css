@@ -166,10 +166,7 @@ button {
 }
 
 #keep {
-   background-color: #fff;
-}
-
-#keep a {
+    background-color: #fff;
     text-decoration: none;
     color: #C13216;
     font-size: 12px;

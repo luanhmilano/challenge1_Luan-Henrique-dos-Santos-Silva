@@ -145,6 +145,14 @@ const showWeatherData = async(city) => {
 
 showWeatherData(userCity)
 
+/* Continuar navegando */
+
+const btnNavegar = document.getElementById("keep")
+btnNavegar.addEventListener("click", (e) => {
+    e.preventDefault()
+    window.open("https://google.com", "_blank")
+})
+
 /* Logout */
 
 const botao = document.getElementById('logout')
@@ -158,7 +166,7 @@ botao.addEventListener("click", (e) => {
 
 function startCounter() {
     let seconds = 30
-    let interval = setInterval(() => {
+    setInterval(() => {
         if (seconds > 0) {
             document.getElementById("refresh").innerHTML = seconds
             seconds--
